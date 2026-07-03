@@ -9,7 +9,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Focusing on human infectious diseases, this theme includes the investigation of pathogenic microbes, diagnostic approaches, and a molecular understanding of infection pathways for improved clinical outcomes and therapeutic strategies.',
     iconName: 'Activity',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_clinical_1783104675878.jpg'
+    imageUrl: '/src/assets/images/theme_clinical.jpg'
   },
   {
     id: 'theme-2',
@@ -19,7 +19,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Aimed at improving crop health and productivity. This area focuses on beneficial microbes, plant disease control, and sustainable agricultural biotechnology solutions for ecological balance.',
     iconName: 'Leaf',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_agricultural_1783104687353.jpg'
+    imageUrl: '/src/assets/images/theme_agricultural.jpg'
   },
   {
     id: 'theme-5',
@@ -29,7 +29,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Conducted under the integrated One Health framework. This includes resistance gene profiling, active surveillance of resistant pathogens, and integrated strategies linking human, animal, and environmental health.',
     iconName: 'ShieldAlert',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_resistance_1783104703215.jpg'
+    imageUrl: '/src/assets/images/theme_resistance.jpg'
   },
   {
     id: 'theme-6',
@@ -39,7 +39,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Sourcing compounds from plants, microbes, and biological systems. Research includes antimicrobial, anticancer, and pharmacological screening along with molecular mechanism studies for sustainable drug development.',
     iconName: 'Sparkles',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_therapeutics_1783104721709.jpg'
+    imageUrl: '/src/assets/images/theme_therapeutics.jpg'
   },
   {
     id: 'theme-7',
@@ -49,7 +49,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Using advanced techniques for the characterization and functional analysis of microorganisms. This includes genomics, gene expression studies, enzyme production, and molecular diagnostics for applied and translational research.',
     iconName: 'Dna',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_molecular_1783104738281.jpg'
+    imageUrl: '/src/assets/images/theme_molecular.jpg'
   }
 ];
 
