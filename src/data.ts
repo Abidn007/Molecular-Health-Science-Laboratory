@@ -1,5 +1,12 @@
 import { ResearchTheme, Publication, TeamMember, LaboratoryService, NewsItem } from './types';
 
+// ১. ছবিগুলোকে সঠিক আপেক্ষিক পাথ (Relative Path) দিয়ে আগে ইমপোর্ট করে নিন
+import themeClinical from './assets/images/theme_clinical.jpg';
+import themeAgricultural from './assets/images/theme_agricultural.jpg';
+import themeResistance from './assets/images/theme_resistance.jpg';
+import themeTherapeutics from './assets/images/theme_therapeutics.jpg';
+import themeMolecular from './assets/images/theme_molecular.jpg';
+
 export const RESEARCH_THEMES: ResearchTheme[] = [
   {
     id: 'theme-1',
@@ -9,7 +16,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Focusing on human infectious diseases, this theme includes the investigation of pathogenic microbes, diagnostic approaches, and a molecular understanding of infection pathways for improved clinical outcomes and therapeutic strategies.',
     iconName: 'Activity',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_clinical.jpg'
+    imageUrl: themeClinical // এখানে স্ট্রিং-এর বদলে ইমপোর্ট করা ভ্যারিয়েবলটি বসবে
   },
   {
     id: 'theme-2',
@@ -19,7 +26,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Aimed at improving crop health and productivity. This area focuses on beneficial microbes, plant disease control, and sustainable agricultural biotechnology solutions for ecological balance.',
     iconName: 'Leaf',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_agricultural.jpg'
+    imageUrl: themeAgricultural
   },
   {
     id: 'theme-5',
@@ -29,7 +36,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Conducted under the integrated One Health framework. This includes resistance gene profiling, active surveillance of resistant pathogens, and integrated strategies linking human, animal, and environmental health.',
     iconName: 'ShieldAlert',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_resistance.jpg'
+    imageUrl: themeResistance
   },
   {
     id: 'theme-6',
@@ -39,7 +46,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Sourcing compounds from plants, microbes, and biological systems. Research includes antimicrobial, anticancer, and pharmacological screening along with molecular mechanism studies for sustainable drug development.',
     iconName: 'Sparkles',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_therapeutics.jpg'
+    imageUrl: themeTherapeutics
   },
   {
     id: 'theme-7',
@@ -49,7 +56,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     longDesc: 'Using advanced techniques for the characterization and functional analysis of microorganisms. This includes genomics, gene expression studies, enzyme production, and molecular diagnostics for applied and translational research.',
     iconName: 'Dna',
     status: 'ongoing',
-    imageUrl: '/src/assets/images/theme_molecular.jpg'
+    imageUrl: themeMolecular
   }
 ];
 
@@ -99,7 +106,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     institution: 'University of Rajshahi',
     photoInitials: 'KN'
   },
-  // Current Students
   {
     id: 'cur-1',
     name: 'Fatematuz Johra',
@@ -136,7 +142,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     institution: 'University of Rajshahi',
     photoInitials: 'BB'
   },
-  // Alumni
   {
     id: 'alu-1',
     name: 'Faria Tasnim Megha',
