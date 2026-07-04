@@ -1,0 +1,8 @@
+{
+  "name": "Molecular Health Science Laboratory",
+  "description": "Official laboratory website for the Molecular Health Science Laboratory (MHSL) of the Department of Genetic Engineering and Biotechnology at the University of Rajshahi, Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

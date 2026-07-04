@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #F8FAFC;         /* slate-50 */
+  --color-bg-alt: #F1F5F9;     /* slate-100 */
+  --color-paper: #FFFFFF;      /* white */
+  --color-ink: #0F172A;        /* slate-900 */
+  --color-ink-soft: #334155;   /* slate-700 */
+  --color-ink-faint: #64748B;  /* slate-500 */
+  --color-teal: #1D4ED8;       /* blue-700 - primary branded color */
+  --color-teal-deep: #1E3A8A;  /* blue-900 - secondary deep brand */
+  --color-teal-pale: #DBEAFE;  /* blue-100 - light accent background */
+  --color-gold: #EA580C;       /* orange-600 - secondary accent alert/noteworthy */
+  --color-gold-pale: #FFEDD5;  /* orange-100 - orange light background */
+  --color-violet: #059669;     /* emerald-600 - third accent healthy/plant */
+  --color-violet-pale: #D1FAE5;/* emerald-100 - emerald light background */
+  --color-line: #E2E8F0;       /* slate-200 - thin borders */
+
+  --font-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+}
+
+/* Animations */
+@keyframes pulseColony {
+  0%, 100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.colony {
+  transform-origin: center;
+  animation: pulseColony 4.5s ease-in-out infinite;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  transform-origin: center;
+  animation: spinSlow 60s linear infinite;
+}
